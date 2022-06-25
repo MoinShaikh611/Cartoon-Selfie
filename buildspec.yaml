@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+      - npm install -g @angular/cli
+  build:
+    commands:
+      - ng build --prod
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist/cartoon-selfie

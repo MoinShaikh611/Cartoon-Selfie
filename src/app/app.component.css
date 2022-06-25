@@ -1,0 +1,60 @@
+body {
+  background-color: #f0f0f0;
+}
+#app {
+  text-align: center;
+  color: #2c3e50;
+}
+#video {
+  border: 1px solid black;
+}
+
+.banner-container {
+  max-width: 768px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+#canvas {
+  display: none;
+}
+li {
+  display: inline;
+  padding: 5px;
+}
+
+.video-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+.video-wrapper .ratio {
+  margin-bottom: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.take-picture {
+  color: #dd155a;
+  background-color: #19193d;
+  width: 100%;
+  height: 70px;
+  font-size: 29px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  outline-width: 0;
+}
+
+.loader {
+  top: 50%;
+  left: 50%;
+  width: initial;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}

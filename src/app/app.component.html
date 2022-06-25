@@ -1,0 +1,36 @@
+<div id="app">
+  <div class="banner-container">
+    <img src="../assets/banner.png" alt="banner" />
+  </div>
+  <div class="video-wrapper">
+    <div class="ratio ratio-1x1">
+      <video
+        [ngClass]="{ hide: isCaptured }"
+        #video
+        id="video"
+        autoplay
+      ></video>
+      <img
+        src=""
+        #preview
+        alt="preview"
+        [ngClass]="{ hide: !gotResponseImg || !isCaptured }"
+      />
+      <img
+        [ngClass]="{ hide: gotResponseImg || !isCaptured }"
+        class="loader"
+        src="../assets/loader.gif"
+        alt="loader"
+      />
+    </div>
+
+    <button
+      id="snap"
+      (click)="gotResponseImg ? save() : getCartoonImage()"
+      class="take-picture"
+    >
+      {{ gotResponseImg ? "Download" : "Take picture" }}
+    </button>
+  </div>
+  <canvas #canvas id="canvas" width="500" height="500"></canvas>
+</div>
